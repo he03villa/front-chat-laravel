@@ -1,0 +1,20 @@
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Login</h4>
+                <form [formGroup]="form" (submit)="login()">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="email" formControlName="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" formControlName="password" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                    <button class="btn btn-outline-info btn-block">Logear</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
